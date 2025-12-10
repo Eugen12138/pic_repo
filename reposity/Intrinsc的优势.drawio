@@ -4,6 +4,12 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="PKHcIQ_TA_kChZ5TDLU--1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="170" width="740" x="140" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PKHcIQ_TA_kChZ5TDLU--4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="220" width="400" x="490" y="230" as="geometry" />
+        </mxCell>
         <mxCell id="ShR7Ecq3hpIVR68jaXmY-18" edge="1" parent="1" source="ShR7Ecq3hpIVR68jaXmY-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;fontSize=14;" target="ShR7Ecq3hpIVR68jaXmY-21">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="780" y="270" as="targetPoint" />
@@ -90,6 +96,24 @@
             <mxPoint x="780" y="450" as="sourcePoint" />
             <mxPoint x="780" y="500" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="PKHcIQ_TA_kChZ5TDLU--2" edge="1" parent="1" source="PKHcIQ_TA_kChZ5TDLU--1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="950" y="240" as="sourcePoint" />
+            <mxPoint x="960" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PKHcIQ_TA_kChZ5TDLU--3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=14;" value="环分割" vertex="1">
+          <mxGeometry height="60" width="120" x="960" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="PKHcIQ_TA_kChZ5TDLU--5" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="880" y="340" as="sourcePoint" />
+            <mxPoint x="960" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PKHcIQ_TA_kChZ5TDLU--6" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=14;" value="基-2NTT" vertex="1">
+          <mxGeometry height="60" width="120" x="960" y="310" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
