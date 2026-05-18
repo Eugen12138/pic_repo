@@ -14,7 +14,7 @@
             <mxPoint x="600" y="160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RMBLcs9uN_SKzhUv9nPz-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=14;" value="`\mathbb{Z}_{q} [x] \/ (x^n + 1)`" vertex="1">
+        <mxCell id="RMBLcs9uN_SKzhUv9nPz-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=14;" value="`\mathbb{Z}_{q} [x] \/ (x^n - \omega _{2})`" vertex="1">
           <mxGeometry height="50" width="160" x="720" y="40" as="geometry" />
         </mxCell>
         <mxCell id="RMBLcs9uN_SKzhUv9nPz-4" edge="1" parent="1" source="RMBLcs9uN_SKzhUv9nPz-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="RMBLcs9uN_SKzhUv9nPz-11">
