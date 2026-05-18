@@ -109,10 +109,10 @@
           <mxGeometry height="50" width="160" x="900" y="140" as="geometry" />
         </mxCell>
         <mxCell id="RMBLcs9uN_SKzhUv9nPz-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=14;" value="`\mathbb{Z}_{q} [x] \/ (x^{4} + \zeta^4)`" vertex="1">
-          <mxGeometry height="50" width="160" x="540" y="480" as="geometry" />
+          <mxGeometry height="50" width="160" x="550" y="480" as="geometry" />
         </mxCell>
         <mxCell id="RMBLcs9uN_SKzhUv9nPz-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=14;" value="`\mathbb{Z}_{q} [x] \/ (x^{4} - \zeta^4)`" vertex="1">
-          <mxGeometry height="50" width="160" x="340" y="480" as="geometry" />
+          <mxGeometry height="50" width="160" x="350" y="480" as="geometry" />
         </mxCell>
         <mxCell id="RMBLcs9uN_SKzhUv9nPz-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1.5;fontSize=14;" value="`\mathbb{Z}_{q} [x] \/ (x^{2} - \zeta^2)`" vertex="1">
           <mxGeometry height="50" width="160" x="290" y="560" as="geometry" />
