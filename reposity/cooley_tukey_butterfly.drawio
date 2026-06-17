@@ -1,0 +1,83 @@
+<mxfile host="65bd71144e">
+    <diagram name="Cooley-Tukey 蝴蝶" id="cooley-tukey-butterfly-simple">
+        <mxGraphModel dx="1027" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="520" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Cooley-Tukey 蝴蝶操作" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=26;fontStyle=1;fontColor=#111827;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="42" width="420" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="formula" value="$$(a,b)\mapsto(a+\zeta b,\ a-\zeta b)$$" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=23;fontColor=#111827;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="86" width="480" height="46" as="geometry"/>
+                </mxCell>
+                <mxCell id="inputA" value="$$a$$" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=25;fontStyle=1;fillColor=#FFFFFF;fontColor=#111827;strokeColor=#374151;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="190" width="58" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="inputB" value="$$b$$" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=25;fontStyle=1;fillColor=#FFFFFF;fontColor=#111827;strokeColor=#374151;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="330" width="58" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="plus" value="$$+$$" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=28;fontStyle=1;fillColor=#E0F2FE;fontColor=#0369A1;strokeColor=#0284C7;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="190" width="58" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="minus" value="$$-$$" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Helvetica;fontSize=32;fontStyle=1;fillColor=#FEE2E2;fontColor=#B91C1C;strokeColor=#DC2626;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="330" width="58" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="outputA" value="$$a+\zeta b$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=23;fontStyle=1;fillColor=#ECFDF5;fontColor=#047857;strokeColor=#10B981;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="188" width="150" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="outputB" value="$$a-\zeta b$$" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=23;fontStyle=1;fillColor=#ECFDF5;fontColor=#047857;strokeColor=#10B981;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="328" width="150" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="twiddleLabel" value="$$\zeta$$" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=22;fontStyle=1;fontColor=#EA580C;" parent="1" vertex="1">
+                    <mxGeometry x="285" y="382" width="52" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="edgeAPlus" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#0369A1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="inputA" target="plus" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edgeAMinus" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#B91C1C;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="inputA" target="minus" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="280" y="219"/>
+                            <mxPoint x="280" y="359"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edgeBPlus" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#EA580C;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="inputB" target="plus" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="359"/>
+                            <mxPoint x="350" y="219"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edgeBMinus" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#EA580C;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="inputB" target="minus" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edgePlusOut" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#047857;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="plus" target="outputA" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edgeMinusOut" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#047857;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="minus" target="outputB" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qvv5o3xpT6d9DXAQTTcn-1" value="$$[-q, q ]$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="153" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qvv5o3xpT6d9DXAQTTcn-2" value="$$[-2q, 2q ]$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="615" y="153" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qvv5o3xpT6d9DXAQTTcn-3" value="$$[-2q, 2q ]$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="75" y="390" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qvv5o3xpT6d9DXAQTTcn-4" value="$$[-3q, 3q ]$$" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="615" y="390" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qvv5o3xpT6d9DXAQTTcn-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;输入范围&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="99" y="127" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Qvv5o3xpT6d9DXAQTTcn-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;输出范围&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="645" y="113" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
